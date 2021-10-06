@@ -1,10 +1,15 @@
 import * as React from 'react';
-import logo from "../../assets/img/logo.svg";
+import { Container, PopoverHeader } from 'react-bootstrap';
+import logo from "../../assets/img/brand/logo.svg";
+import NavBarComponent from './NavBar';
 
-const Header = ({}) => {
+const Header = ({ }) => {
     return (
-        <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+        <header className="app-header">
+            <Container>
+                <img src={logo} alt="logo" />
+            </Container>
+            <NavBarComponent />
         </header>
     );
 }

@@ -5,7 +5,7 @@ class AppFooter extends React.Component {
         return (
             <footer className="footer">
                 <Container>
-                    <Button>Footer Button</Button>
+                    Footer Button
                 </Container>
             </footer>
         );
