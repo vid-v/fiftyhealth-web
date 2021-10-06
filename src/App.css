@@ -1,3 +1,7 @@
-.app-header {
+.app-header .header {
   text-align:  center;
+}
+
+.app-header .nav-option {
+  margin:  auto 10px;
 }

@@ -9,12 +9,15 @@ const NavBarComponent = ({ }) => {
         "Nutrition",
         "Health Care",
         "Wellness"
-    ]
+    ];
+
     return (
         <div>
             {
                 navOptons.map((option, index) => {
-                    <span key={index}>{option}</span>
+                    return (
+                        <span className="nav-option" key={index}>{option}</span>
+                    )
                 })
             }
         </div>

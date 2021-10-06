@@ -6,7 +6,7 @@ import NavBarComponent from './NavBar';
 const Header = ({ }) => {
     return (
         <header className="app-header">
-            <Container>
+            <Container className="header">
                 <img src={logo} alt="logo" />
             </Container>
             <NavBarComponent />
