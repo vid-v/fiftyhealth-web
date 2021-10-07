@@ -1,7 +1,7 @@
-import './App.css';
-import AppFooter from './components/AppFooter';
-import Header from './components/Header';
-import RouterOutlet from './router/RouterOutlet';
+import "./App.css";
+import AppFooter from "./components/AppFooter";
+import Header from "./components/Header";
+import RouterOutlet from "./router/RouterOutlet";
 
 function App() {
   return (

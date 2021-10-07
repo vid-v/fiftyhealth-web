@@ -1,18 +1,21 @@
-import * as React from 'react';
-import {  Container } from 'react-bootstrap';
-import VideoComponent from './video';
-const VideosComponent = ({ }) => {
-    return (
-        <Container>
-            Videos
-            <hr/>
-            <VideoComponent/>
-            <VideoComponent/>
-            <VideoComponent/>
-            <VideoComponent/>
-            <VideoComponent/>
-        </Container>
-    );
-}
+import * as React from "react";
+import { Container, Nav } from "react-bootstrap";
+import Arrow from "../../../assets/img/next.svg";
+import VideoComponent from "./video";
+const VideosComponent = ({}) => {
+  return (
+    <section style={{ background: "#E5E5E5" }}>
+      <Container>
+        <div className="sectionHeading">
+          <h2>Videos</h2>
+          <Nav.Link>
+            View All <img src={Arrow} alt="toggle" />
+          </Nav.Link>
+        </div>
+        <VideoComponent />
+      </Container>
+    </section>
+  );
+};
 
 export default VideosComponent;
