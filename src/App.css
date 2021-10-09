@@ -518,3 +518,19 @@ span.copyRight {
 span.copyRight a {
   text-decoration: underline;
 }
+
+@media (max-width: 767px) {
+  .mainNav a {
+    display: block;
+  }
+  .mainNav a+a {
+    margin-left: 0;
+  }
+  .header-bottom .mainNav.nav {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+}

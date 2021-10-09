@@ -1,8 +1,20 @@
 import * as React from "react";
 import { Card, Col, Row, Nav } from "react-bootstrap";
-import Video from "../../../assets/img/video.jpg";
+
+import video1 from "../../../assets/img/video-1.png";
+import video2 from "../../../assets/img/video-2.png";
+import video3 from "../../../assets/img/video.jpg";
+
 import Play from "../../../assets/img/play.svg";
+
 const VideoComponent = ({}) => {
+
+  const video = [
+    video1,
+    video2,
+    video3
+  ]
+
   return (
     <div className="sectionContent">
       <Row xs={1} sm={2} md={3} className="g-4">
@@ -11,7 +23,7 @@ const VideoComponent = ({}) => {
             {/* video card */}
             <Card className="video-card">
               <Nav.Link>
-                <Card.Img variant="top" src={Video} />
+                <Card.Img variant="top" src={video[idx]} />
                 <img src={Play} alt="play" class="playBtn" />
               </Nav.Link>
               <Card.Body>
