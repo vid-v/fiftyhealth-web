@@ -4,7 +4,7 @@ import Arrow from "../../../assets/img/next.svg";
 import VideoComponent from "./video";
 const VideosComponent = ({}) => {
   return (
-    <section style={{ background: "#E5E5E5" }}>
+    <section style={{ background: "#f7f7f7" }}>
       <Container>
         <div className="sectionHeading">
           <h2>Videos</h2>

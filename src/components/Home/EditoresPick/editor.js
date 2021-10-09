@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card, Col, Row, Nav } from "react-bootstrap";
+import { Card, Col, Row, Nav, Form, Button } from "react-bootstrap";
 import Medical from "../../../assets/img/medical.jpg";
 import Jaare from "../../../assets/img/jaare.jpg";
 const EditorPickComponent = ({}) => {
@@ -44,6 +44,22 @@ const EditorPickComponent = ({}) => {
           <div className="addDemo">
             <img src={Jaare} alt="" />
           </div>
+          <Card className="newsLetter mt-5">
+            <Card.Text>Sign Up</Card.Text>
+            <Card.Title>Wellness Newsletter</Card.Title>
+            <Card.Body>
+              <Form>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Control type="email" />
+                </Form.Group>
+                <div className="d-grid gap-2">
+                  <Button variant="primary" type="submit">
+                    Sign Up Now
+                  </Button>
+                </div>
+              </Form>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
     </div>

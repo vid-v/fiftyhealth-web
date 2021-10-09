@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/logo.svg";
 import Toggle from "../../assets/img/toggle.svg";
 import Search from "../../assets/img/search.svg";
 import NavBarComponent from "./NavBar";
