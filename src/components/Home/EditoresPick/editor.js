@@ -2,20 +2,37 @@ import * as React from "react";
 import { Card, Col, Row, Nav, Form, Button } from "react-bootstrap";
 import Medical from "../../../assets/img/medical.jpg";
 import Jaare from "../../../assets/img/jaare.jpg";
+
+import img1 from "./../../../assets/img/tmp-img/ed-pick-1.png";
+import img2 from "./../../../assets/img/tmp-img/ed-pick-2.png";
+import img3 from "./../../../assets/img/tmp-img/ed-pick-3.png";
+import img4 from "./../../../assets/img/tmp-img/ed-pick-4.png";
+import img5 from "./../../../assets/img/tmp-img/ed-pick-5.png";
+import img6 from "./../../../assets/img/tmp-img/ed-pick-6.png";
+
 const EditorPickComponent = ({}) => {
+  const data = [
+    { title: "How CBD is Reinventing Medicine As We Know It.", img: img1},
+    { title: "Tips for Relieving Stress During a Hectic Week.", img: img2},
+    { title: "Tips for Relieving Stress During a Hectic Week.", img: img3},
+    { title: "How Trips To The Beach Can Improve Your Outlook On Life.", img: img4},
+    { title: "How to Fit Self-Care Into Your Daily Routine.", img: img5},
+    { title: "Multi-Tasking is a Myth: Here’s the Truth About Productivity.", img: img6},
+  ]
+
   return (
     <div className="sectionContent">
       <Row className="g-5 pt-3">
         <Col md="9">
           <Row className="flex-column">
-            {Array.from({ length: 6 }).map((_, idx) => (
+            {data.map((d, idx) => (
               <Col className="mb-5">
                 {/* small card */}
                 <Card className="small-card">
                   <Row>
                     <Col md={3}>
                       <Nav.Link>
-                        <Card.Img variant="top" src={Medical} />
+                        <Card.Img variant="top" src={d.img} />
                       </Nav.Link>
                     </Col>
                     <Col md={6}>
@@ -24,7 +41,7 @@ const EditorPickComponent = ({}) => {
                         <Card.Title>
                           <h3>
                             <Nav.Link>
-                              How CBD is Reinventing Medicine As We Know It.
+                              {d.title}
                             </Nav.Link>
                           </h3>
                         </Card.Title>

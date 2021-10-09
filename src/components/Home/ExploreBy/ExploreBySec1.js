@@ -2,9 +2,29 @@ import * as React from "react";
 import { Card, Col, Row, Nav } from "react-bootstrap";
 import PlaceHolder from "../../../assets/img/img-placeholder.jpg";
 import Image from "../../../assets/img/image.jpg";
-import Family from "../../../assets/img/family.jpg";
+
+import img1 from "./../../../assets/img/tmp-img/R-881.png"
+import img2 from "./../../../assets/img/tmp-img/R-882.png"
+import img3 from "./../../../assets/img/tmp-img/R-883.png"
+import img4 from "./../../../assets/img/tmp-img/R-884.png"
+
+import img5 from "./../../../assets/img/tmp-img/exp-1.png"
+import img6 from "./../../../assets/img/tmp-img/exp-2.png"
+import img7 from "./../../../assets/img/tmp-img/exp-3.png"
 
 const ExploreBySec1Component = ({}) => {
+  const sec1Data = [
+    { title: "Coronovirus 2021", img: img1},
+    { title: "Nutrion", img: img2},
+    { title: "parenthood", img: img3},
+    { title: "woman's wellness", img: img4}
+  ]
+
+  const sec2Data = [
+    { title: "physical HEALTH", img: img5},
+    { title: "Lifestyle Tips", img: img6},
+    { title: "Allergies", img: img7},
+  ]
   return (
     <div className="sectionContent">
       <Row xs={1} sm={2} md={4} className="g-4">
@@ -13,9 +33,9 @@ const ExploreBySec1Component = ({}) => {
             {/* overlay card */}
             <Card className="overlay-card">
               <Nav.Link>
-                <Card.Img variant="top" src={PlaceHolder} />
+                <Card.Img variant="top" src={sec1Data[idx].img} />
                 <Card.Body>
-                  <Card.Title>Coronovirus 2021</Card.Title>
+                  <Card.Title>{sec1Data[idx].title}</Card.Title>
                 </Card.Body>
               </Nav.Link>
             </Card>
@@ -56,12 +76,12 @@ const ExploreBySec1Component = ({}) => {
                   <Row>
                     <Col md={5}>
                       <Nav.Link>
-                        <Card.Img variant="top" src={Family} />
+                        <Card.Img variant="top" src={sec2Data[idx].img} />
                       </Nav.Link>
                     </Col>
                     <Col md={7}>
                       <Card.Body>
-                        <Card.Title>physical Helath</Card.Title>
+                        <Card.Title>{sec2Data[idx].title}</Card.Title>
                         <Card.Title>
                           <h3>
                             <Nav.Link>
